@@ -1,8 +1,8 @@
 
 function Main() {
   return (
-    <div>
-        <img src="mars.png" alt="mars-demo" />
+    <div className="imgContainer">
+        <img src="mars.png" alt="mars-demo" className="bgImage"/>
     </div>
   )
 }
