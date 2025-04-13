@@ -1,10 +1,17 @@
+import PropTypes from "prop-types";
+function Main(props) {
 
-function Main() {
+  const {data} = props;
+
   return (
     <div className="imgContainer">
-        <img src="mars.png" alt="mars-demo" className="bgImage"/>
+        <img src={data?.hdurl} alt="mars-demo" className="bgImage"/>
     </div>
   )
+}
+
+Main.propTypes = {
+  data: PropTypes.object
 }
 
 export default Main

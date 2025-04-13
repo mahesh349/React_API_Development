@@ -21,14 +21,14 @@
 #root {
   min-height: 100vh;
   display: flex;
-  /* display: relative; */
+  display: relative;
 }
 
 .imgContainer {
   display: flex;
   flex-direction: column;
-  /* max-height: 100vh;
-  width: 100%; */
+  max-height: 100vh;
+  width: 100%;
 }
 
 .bgImage {
@@ -50,21 +50,21 @@ footer {
   padding: 1rem;
 }
 
-/* footer div {
+footer div {
   display: flex;
   flex-direction: column;
-} */
+}
 
-/* footer h2 {
+footer h2 {
   font-size: 1.4rem;
-} */
+}
 
-/* footer h1 {
+footer h1 {
   font-size: 0.9rem;
   font-weight: 200;
-} */
+}
 
-/* footer button {
+footer button {
   background: transparent;
   border: none;
   outline: none;
@@ -72,15 +72,15 @@ footer {
   padding: 1rem;
   transition-duration: 200ms;
   cursor: pointer;
-} */
+}
 
-/* footer button i {
+footer button i {
   font-size: 1.3rem;
-} */
+}
 
-/* footer button:hover {
+footer button:hover {
   opacity: 0.7;
-} */
+}
 
 .bgGradient {
   position: absolute;
@@ -119,10 +119,10 @@ footer {
   background: #030615;
 }
 
-/* .sidebarContents h2 {
+.sidebarContents h2 {
   font-weight: 200;
   font-size: 1.4rem;
-} */
+}
 
 .sidebarContents div {
   flex: 1;
@@ -139,35 +139,35 @@ footer {
   padding: 1rem 0;
 }
 
-/* .sidebarContents button:hover {
+.sidebarContents button:hover {
   opacity: 0.7;
-} */
+}
 
-/* .descriptionContainer {
+.descriptionContainer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-} */
+}
 
-/* .descriptionTitle {
+.descriptionTitle {
   font-size: 1.1rem;
   font-weight: 200;
-} */
+}
 
-/* .loadingState {
+.loadingState {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
-} */
+}
 
-/* .loadingState i {
+.loadingState i {
   opacity: 0.2;
-  font-size: 3rem;
+  font-size: 5rem;
   animation: spin 1s linear infinite;
-} */
+}
 
-/* @keyframes spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -175,7 +175,7 @@ footer {
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 
 @media (min-width: 640px) {
@@ -192,9 +192,9 @@ footer {
     width: 100%;
   }
 
-  /* .bgOverlay {
+  .bgOverlay {
     right: 0;
     left: unset;
     width: 100vw;
-  } */
-}
+  }
+} 

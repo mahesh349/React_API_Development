@@ -1,20 +1,33 @@
+import PropTypes from "prop-types";
 
-function Sidebar() {
+function Sidebar(props) {
+
+  const {handleToggelModal, data} = props;
+
+  function OnClick(){
+    handleToggelModal();
+  }
+
   return (
     <div className="sidebar" >
-      <div className="bgOverlay" ></div>
+      <div onClick={OnClick} className="bgOverlay"></div>
       <div className="sidebarContents">
-        <h2>The Brutal Martian Landscape</h2>
-        <div>
-          <p>Description</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sequi molestiae numquam, doloremque doloribus ab nobis cupiditate, error vitae eveniet delectus odio voluptatum sunt tempore quidem praesentium vel maxime magni!</p>
+        <h2>{data?.title}</h2>
+        <div className="descriptionContainer" >
+          <p className="descriptionTitle" >{data?.date}</p>
+          <p>{data?.explanation}</p>
         </div>
-        <button>
+        <button onClick={OnClick} >
           <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
     </div>
   )
 }
+
+Sidebar.propTypes = {
+  handleToggelModal: PropTypes.func,
+  data: PropTypes.object
+};
 
 export default Sidebar
