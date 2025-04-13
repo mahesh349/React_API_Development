@@ -20,6 +20,7 @@ function App() {
    async function fetchAPIData(){
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY // we have added our api key in the .env file so that no one can see it
       const url = `https://api.nasa.gov/planetary/apod?api_key=${NASA_KEY}`
+
       // Cashing our deta in below code
       const today = (new Date()).toDateString();
       const localKey = `NASA-${today}`;
@@ -31,10 +32,11 @@ function App() {
       }
       localStorage.clear();
 
-
+      // code for retreiving data from API call
       try{
         const res = await fetch(url);
         const apiData = await res.json();
+        // storing the data in cache system
         localStorage.setItem(localKey,JSON.stringify(apiData));
         setData(apiData);
         console.log('Fetched from API today');
